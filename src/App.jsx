@@ -44,12 +44,17 @@ function Layout() {
   );
 }
 
+// Matches vite.config.js's `base` — Vite exposes it as import.meta.env.BASE_URL
+// ("/power-provider-services/" in production, "/" in local dev) so the router
+// and the built asset URLs always agree on the subpath.
+const basename = import.meta.env.BASE_URL.replace(/\/$/, "") || "/";
+
 export default function App() {
   return (
     <ThemeProvider>
       <LanguageProvider>
         <ConsentProvider>
-          <BrowserRouter>
+          <BrowserRouter basename={basename}>
             <Layout />
           </BrowserRouter>
         </ConsentProvider>
