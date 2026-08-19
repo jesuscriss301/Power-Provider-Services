@@ -1,14 +1,14 @@
 import { IconPhone, IconWhatsApp } from "./icons.jsx";
 import { useLanguage } from "../context/LanguageContext.jsx";
 
-// Mobile-only floating quick-actions (hidden ≥640px — see .mobile-fabs in
-// global.css). Desktop uses the WhatsApp button in the header instead
-// (see Header.jsx), so the call FAB stays mobile-exclusive.
+// Floating quick-actions, right edge of the screen (not in the nav).
+// WhatsApp shows on every screen size; the Call FAB is mobile-only
+// (hidden ≥640px — see .fab-call in global.css).
 export default function CallFab() {
   const { t } = useLanguage();
 
   return (
-    <div className="mobile-fabs">
+    <div className="floating-fabs">
       <a
         className="fab fab-whatsapp"
         href="https://wa.me/14075922900"
