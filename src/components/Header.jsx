@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import { useTheme } from "../context/ThemeContext.jsx";
-import { IconPhone, IconSun, IconMoon } from "./icons.jsx";
+import { IconWhatsApp, IconSun, IconMoon } from "./icons.jsx";
 import logoHeader from "../assets/logo-header.png";
 
 export default function Header({ onOpenMobileNav, navOpen }) {
@@ -57,9 +57,14 @@ export default function Header({ onOpenMobileNav, navOpen }) {
             {theme === "dark" ? <IconSun /> : <IconMoon />}
           </button>
 
-          <a className="btn btn-primary header-call" href="tel:+14075922900">
-            <IconPhone width={16} height={16} />
-            <span>{t("nav.callBtn")}</span>
+          <a
+            className="btn btn-primary header-call header-whatsapp"
+            href="https://wa.me/14075922900"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconWhatsApp width={16} height={16} />
+            <span>{t("nav.whatsappBtn")}</span>
           </a>
 
           <button

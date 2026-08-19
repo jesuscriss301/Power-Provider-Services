@@ -212,6 +212,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 @media (min-width:640px){
   .header-call{display:inline-flex;}
 }
+/* Desktop header CTA is WhatsApp-only (see Header.jsx) — override the
+   red .btn-primary fill with WhatsApp's brand green for recognizability. */
+.header-whatsapp{background:#25D366;box-shadow:0 10px 30px -10px rgba(37,211,102,.55);}
+.header-whatsapp:hover{background:#1DA851;}
 
 /* Mobile nav toggle + drawer */
 .nav-toggle{display:inline-flex;}
@@ -233,16 +237,21 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 }
 @media (min-width:920px){ .mobile-nav{display:none !important;} }
 
-/* Floating call FAB — mobile quick-action */
-.call-fab{
+/* Floating call + WhatsApp FABs — mobile quick-actions only.
+   Desktop drops the call button entirely and uses the WhatsApp button
+   in the header instead (see .header-whatsapp above). */
+.mobile-fabs{
   position:fixed;right:18px;bottom:18px;z-index:120;
-  width:58px;height:58px;border-radius:50%;
-  background:var(--pps-red-fill);color:#fff;
+  display:flex;flex-direction:column;gap:12px;
+}
+.mobile-fabs .fab{
+  width:58px;height:58px;border-radius:50%;color:#fff;
   display:flex;align-items:center;justify-content:center;
-  box-shadow:0 14px 30px -8px rgba(200,22,29,.65);
   text-decoration:none;
 }
-@media (min-width:640px){ .call-fab{display:none;} }
+.fab-call{background:var(--pps-red-fill);box-shadow:0 14px 30px -8px rgba(200,22,29,.65);}
+.fab-whatsapp{background:#25D366;box-shadow:0 14px 30px -8px rgba(37,211,102,.65);}
+@media (min-width:640px){ .mobile-fabs{display:none;} }
 
 
 /* =========================================================
