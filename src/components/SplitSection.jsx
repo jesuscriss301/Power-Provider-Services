@@ -7,6 +7,7 @@ export default function SplitSection({
   altBg = false,
   reverse = false,
   Icon,
+  image,
   prefix,
   chipCount,
   sectionRef,
@@ -34,7 +35,11 @@ export default function SplitSection({
           </div>
         </div>
         <div ref={media.ref} className={`split-media ${media.className}`}>
-          <Icon width={88} height={88} stroke="var(--pps-brand-black)" strokeWidth={1.4} opacity={0.55} />
+          {image ? (
+            <img src={image} alt={t(`${prefix}.media`)} loading="lazy" width="1200" height="800" />
+          ) : (
+            <Icon width={88} height={88} stroke="var(--pps-brand-black)" strokeWidth={1.4} opacity={0.55} />
+          )}
           <span className="media-caption">{t(`${prefix}.media`)}</span>
         </div>
       </div>

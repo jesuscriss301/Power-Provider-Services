@@ -11,6 +11,8 @@ import FAQ from "../components/FAQ.jsx";
 import ServiceArea from "../components/ServiceArea.jsx";
 import Contact from "../components/Contact.jsx";
 import { IconBolt, IconConstruction } from "../components/icons.jsx";
+import residentialPhoto from "../assets/residential-kitchen-pendant-lighting.jpg";
+import commercialPhoto from "../assets/commercial-retail-lighting-maintenance.jpg";
 
 export default function Home() {
   usePageMeta("meta.title", "meta.description");
@@ -21,8 +23,8 @@ export default function Home() {
       <StatsStrip />
       <Services />
       <WhyChooseUs />
-      <SplitSection id="residential" prefix="res" Icon={IconBolt} chipCount={6} />
-      <SplitSection id="commercial" altBg reverse prefix="com" Icon={IconConstruction} chipCount={5} />
+      <SplitSection id="residential" prefix="res" Icon={IconBolt} image={residentialPhoto} chipCount={6} />
+      <SplitSection id="commercial" altBg reverse prefix="com" Icon={IconConstruction} image={commercialPhoto} chipCount={5} />
       <SpotlightPair />
       <Process />
       <Testimonial />

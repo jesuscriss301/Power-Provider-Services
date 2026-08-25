@@ -65,13 +65,13 @@ export const I18N = {
     "res.h2": "Residential Electrical Services",
     "res.body": "From a flickering breaker to a full panel upgrade, we handle the electrical work that keeps a home safe, modern and running the way it should — lighting, outlets, ceiling fans, dedicated circuits, EV chargers, troubleshooting, and renovation wiring.",
     "res.chip1": "Panel & meter upgrades", "res.chip2": "EV charger installation", "res.chip3": "Interior & exterior lighting", "res.chip4": "Ceiling fans", "res.chip5": "Troubleshooting & repairs", "res.chip6": "Renovation wiring",
-    "res.media": "Residential panel & wiring work",
+    "res.media": "Installing pendant lighting in a residential kitchen",
 
     "com.eyebrow": "Commercial & Industrial",
     "com.h2": "Commercial & Industrial Electrical Services",
     "com.body": "A verified General Contractor on the Procore Network since January 2024, Power Provider Services supports commercial and industrial clients with new construction, remodels, dedicated circuits, and full-building electrical work.",
     "com.chip1": "New construction", "com.chip2": "Remodels", "com.chip3": "Commercial & industrial electrical", "com.chip4": "Procore-verified GC profile", "com.chip5": "Dedicated circuits",
-    "com.media": "Commercial & industrial electrical work",
+    "com.media": "Servicing recessed lighting at a commercial retail space",
 
     "ev.eyebrow": "EV Chargers",
     "ev.h2": "EV Charger Installation",
@@ -211,13 +211,13 @@ export const I18N = {
     "res.h2": "Servicios Eléctricos Residenciales",
     "res.body": "Desde un breaker que falla hasta una actualización completa de panel, nos encargamos del trabajo eléctrico que mantiene tu hogar seguro, moderno y funcionando como debe — iluminación, tomacorrientes, ventiladores de techo, circuitos dedicados, cargadores EV, diagnóstico y cableado de renovación.",
     "res.chip1": "Actualización de paneles y medidores", "res.chip2": "Instalación de cargadores EV", "res.chip3": "Iluminación interior y exterior", "res.chip4": "Ventiladores de techo", "res.chip5": "Diagnóstico y reparaciones", "res.chip6": "Cableado de renovación",
-    "res.media": "Trabajo residencial de panel y cableado",
+    "res.media": "Instalación de lámparas colgantes en una cocina residencial",
 
     "com.eyebrow": "Comercial e Industrial",
     "com.h2": "Servicios Eléctricos Comerciales e Industriales",
     "com.body": "Verificados como Contratista General en Procore Network desde enero de 2024, Power Provider Services apoya a clientes comerciales e industriales con nueva construcción, remodelaciones, circuitos dedicados y trabajo eléctrico integral.",
     "com.chip1": "Nueva construcción", "com.chip2": "Remodelaciones", "com.chip3": "Eléctrico comercial e industrial", "com.chip4": "Perfil de GC verificado en Procore", "com.chip5": "Circuitos dedicados",
-    "com.media": "Trabajo eléctrico comercial e industrial",
+    "com.media": "Mantenimiento de iluminación empotrada en un local comercial",
 
     "ev.eyebrow": "Cargadores EV",
     "ev.h2": "Instalación de Cargadores para Vehículos Eléctricos",
