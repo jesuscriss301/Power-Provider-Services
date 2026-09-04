@@ -11,6 +11,7 @@ export default function MobileNav({ open, onClose }) {
     ["#process", "nav.process"],
     ["#faq", "nav.faq"],
     ["#contact", "nav.contact"],
+    ["#location", "nav.location"],
   ];
 
   useEffect(() => {

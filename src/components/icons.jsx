@@ -71,6 +71,15 @@ export function IconClock(props) {
   );
 }
 
+export function IconPin(props) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M12 22s8-4.5 8-11.8A8 8 0 0 0 4 10.2C4 17.5 12 22 12 22z" />
+      <circle cx="12" cy="10" r="3" />
+    </svg>
+  );
+}
+
 export function IconPanel(props) {
   return (
     <svg {...base} {...props}>

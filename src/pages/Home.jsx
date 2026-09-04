@@ -10,6 +10,7 @@ import Testimonial from "../components/Testimonial.jsx";
 import FAQ from "../components/FAQ.jsx";
 import ServiceArea from "../components/ServiceArea.jsx";
 import Contact from "../components/Contact.jsx";
+import LocationMap from "../components/LocationMap.jsx";
 import { IconBolt, IconConstruction } from "../components/icons.jsx";
 import residentialPhoto from "../assets/residential-kitchen-pendant-lighting.jpg";
 import commercialPhoto from "../assets/commercial-retail-lighting-maintenance.jpg";
@@ -31,6 +32,7 @@ export default function Home() {
       <FAQ />
       <ServiceArea />
       <Contact />
+      <LocationMap />
     </main>
   );
 }

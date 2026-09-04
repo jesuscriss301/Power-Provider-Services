@@ -15,6 +15,7 @@ export default function Header({ onOpenMobileNav, navOpen }) {
     ["#process", "nav.process"],
     ["#faq", "nav.faq"],
     ["#contact", "nav.contact"],
+    ["#location", "nav.location"],
   ];
 
   return (

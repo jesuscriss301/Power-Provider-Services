@@ -12,6 +12,7 @@ export const I18N = {
     "nav.process": "How It Works",
     "nav.faq": "FAQ",
     "nav.contact": "Contact",
+    "nav.location": "Location",
     "nav.callBtn": "(407) 592-2900",
     "a11y.whatsapp": "Chat with us on WhatsApp",
     "a11y.call": "Call Power Provider Services",
@@ -115,6 +116,12 @@ export const I18N = {
     "contact.hours.sunday": "Sunday", "contact.hours.sundayVal": "Closed",
     "contact.formTitle": "Send a Message", "contact.formName": "Name", "contact.formPhone": "Phone", "contact.formMsg": "What do you need help with?", "contact.formSubmit": "Send via Email",
 
+    "location.eyebrow": "Our Office",
+    "location.h2": "Find Our Office",
+    "location.body": "Our office is based in Orlando, serving Apopka, Orlando and the greater Central Florida area for residential, commercial and industrial work.",
+    "location.addressLabel": "Address",
+    "location.directions": "Get Directions",
+
     "footer.tagline": "Licensed electrical contractor serving Apopka, Orlando & Central Florida since 2019.",
     "footer.linksTitle": "Explore", "footer.verifyTitle": "Verified On", "footer.licenseLabel": "FL License EC13010990",
     "footer.rights": "All rights reserved.",
@@ -158,6 +165,7 @@ export const I18N = {
     "nav.process": "Cómo Funciona",
     "nav.faq": "Preguntas",
     "nav.contact": "Contacto",
+    "nav.location": "Ubicación",
     "nav.callBtn": "(407) 592-2900",
     "a11y.whatsapp": "Escríbenos por WhatsApp",
     "a11y.call": "Llamar a Power Provider Services",
@@ -260,6 +268,12 @@ export const I18N = {
     "contact.hours.weekdays": "Lunes – Sábado", "contact.hours.weekdaysVal": "8:00 AM – 4:30 PM",
     "contact.hours.sunday": "Domingo", "contact.hours.sundayVal": "Cerrado",
     "contact.formTitle": "Envía un Mensaje", "contact.formName": "Nombre", "contact.formPhone": "Teléfono", "contact.formMsg": "¿En qué necesitas ayuda?", "contact.formSubmit": "Enviar por Correo",
+
+    "location.eyebrow": "Nuestra Oficina",
+    "location.h2": "Encuentra Nuestra Oficina",
+    "location.body": "Nuestra oficina está en Orlando, sirviendo a Apopka, Orlando y el área del Centro de la Florida para trabajos residenciales, comerciales e industriales.",
+    "location.addressLabel": "Dirección",
+    "location.directions": "Cómo Llegar",
 
     "footer.tagline": "Contratista eléctrico con licencia en Apopka, Orlando y el Centro de la Florida desde 2019.",
     "footer.linksTitle": "Explorar", "footer.verifyTitle": "Verificados En", "footer.licenseLabel": "Licencia de FL EC13010990",

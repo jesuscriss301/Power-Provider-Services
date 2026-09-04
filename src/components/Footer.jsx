@@ -27,6 +27,7 @@ export default function Footer() {
             <li><a href="#commercial">{t("nav.commercial")}</a></li>
             <li><a href="#faq">{t("nav.faq")}</a></li>
             <li><a href="#contact">{t("nav.contact")}</a></li>
+            <li><a href="#location">{t("nav.location")}</a></li>
           </ul>
         </div>
 
