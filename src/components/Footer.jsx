@@ -4,7 +4,7 @@ import { useConsent } from "../context/ConsentContext.jsx";
 import logoHeader from "../assets/logo-header.png";
 
 export default function Footer() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const { openPreferences } = useConsent();
   const year = new Date().getFullYear();
 
@@ -28,6 +28,17 @@ export default function Footer() {
             <li><a href="#faq">{t("nav.faq")}</a></li>
             <li><a href="#contact">{t("nav.contact")}</a></li>
             <li><a href="#location">{t("nav.location")}</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>{lang === "es" ? "Servicios" : "Services"}</h3>
+          <ul>
+            <li><Link to="/ev-charger-installation">{lang === "es" ? "Instalación de Cargadores EV" : "EV Charger Installation"}</Link></li>
+            <li><Link to="/panel-upgrade">{lang === "es" ? "Actualización de Paneles" : "Panel Upgrades"}</Link></li>
+            <li><Link to="/outlet-installation">{lang === "es" ? "Tomacorrientes e Interruptores" : "Outlets & Switches"}</Link></li>
+            <li><Link to="/electrical-repair">{lang === "es" ? "Reparaciones Eléctricas" : "Electrical Repair"}</Link></li>
+            <li><Link to="/apopka-electrician">{lang === "es" ? "Electricista en Apopka" : "Apopka Electrician"}</Link></li>
           </ul>
         </div>
 

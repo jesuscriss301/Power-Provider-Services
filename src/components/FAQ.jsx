@@ -2,8 +2,8 @@ import { useState } from "react";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import { useReveal } from "../hooks/useReveal.js";
 
-const QUESTIONS = ["faq.q1", "faq.q2", "faq.q3", "faq.q4", "faq.q5", "faq.q6", "faq.q7"];
-const ANSWERS = ["faq.a1", "faq.a2", "faq.a3", "faq.a4", "faq.a5", "faq.a6", "faq.a7"];
+const QUESTIONS = ["faq.q1", "faq.q2", "faq.q3", "faq.q4", "faq.q5", "faq.q6", "faq.q7", "faq.q8"];
+const ANSWERS = ["faq.a1", "faq.a2", "faq.a3", "faq.a4", "faq.a5", "faq.a6", "faq.a7", "faq.a8"];
 
 export default function FAQ() {
   const { t } = useLanguage();

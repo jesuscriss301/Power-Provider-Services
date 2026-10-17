@@ -4,8 +4,8 @@
 export const I18N = {
   en: {
     "a11y.skip": "Skip to content",
-    "meta.title": "Power Provider Services | Licensed Electrician in Apopka & Orlando, FL",
-    "meta.description": "Licensed electrical contractor serving Apopka, Orlando & Central Florida since 2019. Panel upgrades, EV chargers, wiring, lighting & more. Free estimates — call or text (407) 592-2900.",
+    "meta.title": "Licensed Electrician in Orlando, FL | Power Provider Services",
+    "meta.description": "Licensed electrician in Orlando, Pine Castle, Belle Isle & Apopka since 2019. Panel upgrades, EV chargers, outlets, repairs. Free estimates — call or text (407) 592-2900.",
     "nav.services": "Services",
     "nav.residential": "Residential",
     "nav.commercial": "Commercial",
@@ -20,9 +20,9 @@ export const I18N = {
     "theme.toggleLabel": "Toggle dark / light theme",
     "lang.toggleLabel": "Language selector",
 
-    "hero.eyebrow": "Licensed Electrical Contractor · Central Florida",
-    "hero.h1a": "Licensed Electrical Work You Can ", "hero.h1b": "Trust", "hero.h1c": " — Done Right, On Time.",
-    "hero.sub": "Power Provider Services has kept homes and businesses across Apopka, Orlando & Central Florida safely powered since 2019 — from panel upgrades to EV chargers, new construction to troubleshooting and repairs. Licensed. Reasonably priced. Always a free estimate.",
+    "hero.eyebrow": "Licensed Electrician · Orlando, FL",
+    "hero.h1a": "Licensed ", "hero.h1b": "Electrician", "hero.h1c": " in Orlando, FL",
+    "hero.sub": "Licensed. Done right, on time. Power Provider Services has served homes and businesses across Orlando, Apopka, Pine Castle, Belle Isle & Central Florida since 2019 — panel upgrades, EV chargers, outlets, wiring and repairs. Always a free estimate.",
     "hero.ctaPrimary": "Call or Text (407) 592-2900",
     "hero.ctaSecondary": "Get Your Free Estimate",
     "hero.trust1": "Licensed · EC13010990",
@@ -95,17 +95,18 @@ export const I18N = {
 
     "faq.eyebrow": "Questions",
     "faq.h2": "Frequently Asked Questions",
-    "faq.q1": "What areas do you serve?", "faq.a1": "We serve Apopka, Orlando and the greater Central Florida area, for residential, commercial and industrial clients.",
+    "faq.q1": "What areas do you serve?", "faq.a1": "We serve Orlando, Pine Castle, Belle Isle, Taft, Edgewood, Apopka and the greater Central Florida area, for residential, commercial and industrial clients.",
     "faq.q2": "Are you licensed?", "faq.a2": "Yes. Power Provider Services LLC holds Florida Electrical Contractor License EC13010990.",
     "faq.q3": "Do you offer free estimates?", "faq.a3": "Yes — every estimate is free, with no obligation.",
     "faq.q4": "Do you install EV chargers?", "faq.a4": "Yes, EV charger installation is one of our core residential and commercial services.",
     "faq.q5": "What are your hours?", "faq.a5": "Monday–Saturday, 8:00 AM–4:30 PM. Closed Sundays.",
     "faq.q6": "Do you work on commercial and industrial projects?", "faq.a6": "Yes — we're a verified General Contractor on the Procore Network, serving commercial and industrial clients alongside residential work.",
     "faq.q7": "How do I request service?", "faq.a7": "Call or text (407) 592-2900, or email powerproviderservices@gmail.com.",
+    "faq.q8": "What should I do during a power outage or electrical failure?", "faq.a8": "First check your circuit breaker panel for any tripped breakers and reset them. If the breakers are fine but power is still out, contact your utility provider. For damaged wiring, burned outlets, sparks, or any electrical safety hazard, call us at (407) 592-2900 — we handle troubleshooting and repairs Monday–Saturday, 8:00 AM–4:30 PM.",
 
     "area.eyebrow": "Service Area",
     "area.h2": "Proudly Serving Central Florida",
-    "area.body": "Power Provider Services works throughout Apopka, Orlando and the surrounding Central Florida area — residential, commercial and industrial. You can verify our standing on the directories below.",
+    "area.body": "Power Provider Services is your licensed electrician in Orlando, FL — also serving Pine Castle, Belle Isle, Taft, Edgewood, Apopka and the greater Central Florida area for residential, commercial and industrial work. You can verify our standing on the directories below.",
     "area.badge.bbb": "View BBB Profile", "area.badge.yelp": "View Yelp Profile", "area.badge.procore": "View Procore Profile",
 
     "contact.eyebrow": "Contact",
@@ -122,7 +123,7 @@ export const I18N = {
     "location.addressLabel": "Address",
     "location.directions": "Get Directions",
 
-    "footer.tagline": "Licensed electrical contractor serving Apopka, Orlando & Central Florida since 2019.",
+    "footer.tagline": "Licensed electrician in Orlando, FL — also serving Apopka, Pine Castle, Belle Isle & Central Florida since 2019.",
     "footer.linksTitle": "Explore", "footer.verifyTitle": "Verified On", "footer.licenseLabel": "FL License EC13010990",
     "footer.rights": "All rights reserved.",
     "footer.credit": "Site content sourced exclusively from company-provided materials and public directories (BBB, Yelp, Procore, Yahoo Local).",
@@ -157,8 +158,8 @@ export const I18N = {
   },
   es: {
     "a11y.skip": "Saltar al contenido",
-    "meta.title": "Power Provider Services | Electricista con Licencia en Apopka y Orlando, FL",
-    "meta.description": "Contratista eléctrico con licencia en Apopka, Orlando y el Centro de la Florida desde 2019. Paneles, cargadores EV, cableado, iluminación y más. Estimados gratis — llama o envía un texto al (407) 592-2900.",
+    "meta.title": "Electricista con Licencia en Orlando, FL | Power Provider Services",
+    "meta.description": "Electricista con licencia en Orlando, Pine Castle, Belle Isle y Apopka desde 2019. Actualización de paneles, cargadores EV, tomacorrientes, reparaciones. Estimados gratis — llama o envía un texto al (407) 592-2900.",
     "nav.services": "Servicios",
     "nav.residential": "Residencial",
     "nav.commercial": "Comercial",
@@ -173,9 +174,9 @@ export const I18N = {
     "theme.toggleLabel": "Cambiar tema claro / oscuro",
     "lang.toggleLabel": "Selector de idioma",
 
-    "hero.eyebrow": "Contratista Eléctrico con Licencia · Centro de la Florida",
-    "hero.h1a": "Trabajo Eléctrico con Licencia en el que Puedes ", "hero.h1b": "Confiar", "hero.h1c": " — Bien Hecho, a Tiempo.",
-    "hero.sub": "Power Provider Services mantiene con energía segura a hogares y negocios en Apopka, Orlando y el Centro de la Florida desde 2019 — desde actualización de paneles hasta cargadores para vehículos eléctricos, nueva construcción y reparaciones. Con licencia. Precios razonables. Siempre con estimado gratis.",
+    "hero.eyebrow": "Electricista con Licencia · Orlando, FL",
+    "hero.h1a": "Electricista con ", "hero.h1b": "Licencia", "hero.h1c": " en Orlando, FL",
+    "hero.sub": "Con licencia. Bien hecho, a tiempo. Power Provider Services sirve a hogares y negocios en Orlando, Apopka, Pine Castle, Belle Isle y el Centro de la Florida desde 2019 — actualización de paneles, cargadores EV, tomacorrientes, cableado y reparaciones. Siempre con estimado gratis.",
     "hero.ctaPrimary": "Llama o Envía un Texto al (407) 592-2900",
     "hero.ctaSecondary": "Solicita tu Estimado Gratis",
     "hero.trust1": "Con Licencia · EC13010990",
@@ -248,17 +249,18 @@ export const I18N = {
 
     "faq.eyebrow": "Preguntas",
     "faq.h2": "Preguntas Frecuentes",
-    "faq.q1": "¿Qué áreas atienden?", "faq.a1": "Atendemos Apopka, Orlando y el área metropolitana del Centro de la Florida, para clientes residenciales, comerciales e industriales.",
+    "faq.q1": "¿Qué áreas atienden?", "faq.a1": "Atendemos Orlando, Pine Castle, Belle Isle, Taft, Edgewood, Apopka y el área metropolitana del Centro de la Florida, para clientes residenciales, comerciales e industriales.",
     "faq.q2": "¿Tienen licencia?", "faq.a2": "Sí. Power Provider Services LLC tiene la Licencia de Contratista Eléctrico de Florida EC13010990.",
     "faq.q3": "¿Ofrecen estimados gratis?", "faq.a3": "Sí — cada estimado es gratis y sin compromiso.",
     "faq.q4": "¿Instalan cargadores para vehículos eléctricos?", "faq.a4": "Sí, la instalación de cargadores EV es uno de nuestros servicios principales, residenciales y comerciales.",
     "faq.q5": "¿Cuál es su horario?", "faq.a5": "Lunes a Sábado, 8:00 AM–4:30 PM. Cerrado los domingos.",
     "faq.q6": "¿Trabajan en proyectos comerciales e industriales?", "faq.a6": "Sí — somos Contratista General verificado en Procore Network, atendiendo a clientes comerciales e industriales además de trabajo residencial.",
     "faq.q7": "¿Cómo solicito el servicio?", "faq.a7": "Llama o envía un texto al (407) 592-2900, o escribe a powerproviderservices@gmail.com.",
+    "faq.q8": "¿Qué hago durante un apagón o falla eléctrica?", "faq.a8": "Primero revisa el panel de breakers en busca de alguno disparado y vuélvelo a activar. Si los breakers están bien pero no hay energía, contacta a tu proveedor de servicio eléctrico. Si hay cableado dañado, tomacorrientes quemados, chispas o cualquier peligro eléctrico, llámanos al (407) 592-2900 — atendemos diagnósticos y reparaciones de lunes a sábado, 8:00 AM–4:30 PM.",
 
     "area.eyebrow": "Área de Servicio",
     "area.h2": "Sirviendo con Orgullo al Centro de la Florida",
-    "area.body": "Power Provider Services trabaja en Apopka, Orlando y el área circundante del Centro de la Florida — residencial, comercial e industrial. Puedes verificar nuestra reputación en los directorios de abajo.",
+    "area.body": "Power Provider Services es tu electricista con licencia en Orlando, FL — también atendemos Pine Castle, Belle Isle, Taft, Edgewood, Apopka y el área del Centro de la Florida para trabajos residenciales, comerciales e industriales. Puedes verificar nuestra reputación en los directorios de abajo.",
     "area.badge.bbb": "Ver Perfil en BBB", "area.badge.yelp": "Ver Perfil en Yelp", "area.badge.procore": "Ver Perfil en Procore",
 
     "contact.eyebrow": "Contacto",
@@ -275,7 +277,7 @@ export const I18N = {
     "location.addressLabel": "Dirección",
     "location.directions": "Cómo Llegar",
 
-    "footer.tagline": "Contratista eléctrico con licencia en Apopka, Orlando y el Centro de la Florida desde 2019.",
+    "footer.tagline": "Electricista con licencia en Orlando, FL — también sirviendo a Apopka, Pine Castle, Belle Isle y el Centro de la Florida desde 2019.",
     "footer.linksTitle": "Explorar", "footer.verifyTitle": "Verificados En", "footer.licenseLabel": "Licencia de FL EC13010990",
     "footer.rights": "Todos los derechos reservados.",
     "footer.credit": "El contenido del sitio proviene exclusivamente de materiales proporcionados por la empresa y directorios públicos (BBB, Yelp, Procore, Yahoo Local).",
