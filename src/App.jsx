@@ -17,6 +17,9 @@ import PanelUpgrade from "./pages/PanelUpgrade.jsx";
 import OutletInstallation from "./pages/OutletInstallation.jsx";
 import ElectricalRepair from "./pages/ElectricalRepair.jsx";
 import ApopkaElectrician from "./pages/ApopkaElectrician.jsx";
+import GeneratorHookup from "./pages/GeneratorHookup.jsx";
+import SmartHome from "./pages/SmartHome.jsx";
+import OutdoorLighting from "./pages/OutdoorLighting.jsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
 
 function SkipLink() {
@@ -46,6 +49,9 @@ function Layout() {
         <Route path="/outlet-installation" element={<OutletInstallation />} />
         <Route path="/electrical-repair" element={<ElectricalRepair />} />
         <Route path="/apopka-electrician" element={<ApopkaElectrician />} />
+        <Route path="/generator-hookup" element={<GeneratorHookup />} />
+        <Route path="/smart-home" element={<SmartHome />} />
+        <Route path="/outdoor-lighting" element={<OutdoorLighting />} />
       </Routes>
 
       <Footer />

@@ -17,7 +17,7 @@ import {
 const SERVICES = [
   { icon: IconPanel, key: "svc1", link: "/panel-upgrade" },
   { icon: IconBolt, key: "svc2", link: "/electrical-repair" },
-  { icon: IconLightbulb, key: "svc3" },
+  { icon: IconLightbulb, key: "svc3", link: "/outdoor-lighting" },
   { icon: IconOutlet, key: "svc4", link: "/outlet-installation" },
   { icon: IconWire, key: "svc5" },
   { icon: IconEvCharger, key: "svc6", link: "/ev-charger-installation" },

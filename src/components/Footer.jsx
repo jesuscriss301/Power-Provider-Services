@@ -39,6 +39,9 @@ export default function Footer() {
             <li><Link to="/outlet-installation">{lang === "es" ? "Tomacorrientes e Interruptores" : "Outlets & Switches"}</Link></li>
             <li><Link to="/electrical-repair">{lang === "es" ? "Reparaciones Eléctricas" : "Electrical Repair"}</Link></li>
             <li><Link to="/apopka-electrician">{lang === "es" ? "Electricista en Apopka" : "Apopka Electrician"}</Link></li>
+            <li><Link to="/generator-hookup">{lang === "es" ? "Conexion de Generadores" : "Generator Hookup"}</Link></li>
+            <li><Link to="/smart-home">{lang === "es" ? "Hogar Inteligente" : "Smart Home"}</Link></li>
+            <li><Link to="/outdoor-lighting">{lang === "es" ? "Iluminacion Exterior" : "Outdoor Lighting"}</Link></li>
           </ul>
         </div>
 
