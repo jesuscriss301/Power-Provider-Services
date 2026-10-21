@@ -543,3 +543,19 @@ textarea.form-field{resize:vertical;}
   border-left:3px solid var(--pps-red-text);background:var(--pps-surface-2);border-radius:0 var(--radius-sm) var(--radius-sm) 0;
   padding:16px 20px;font-size:.88rem;color:var(--pps-text-muted);margin:1.4em 0;
 }
+
+
+/* =========================================================
+   Blog layout — 2-column (article + sidebar)
+========================================================= */
+@media (min-width: 900px) {
+  .blog-layout {
+    grid-template-columns: 1fr 300px !important;
+    align-items: start;
+  }
+}
+@media (min-width: 1080px) {
+  .blog-layout {
+    grid-template-columns: 1fr 320px !important;
+  }
+}
