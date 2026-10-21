@@ -27,7 +27,7 @@ const SIDEBAR_ARTICLES = [
     enCat: "Florida Laws",
     esCat: "Leyes de Florida",
     color: "#c0392b",
-    image: null,
+    image: "https://cdn.pixabay.com/photo/2017/09/16/14/33/electrician-2755685_640.jpg",
   },
   {
     slug: "hurricane-electrical-safety",
@@ -38,7 +38,7 @@ const SIDEBAR_ARTICLES = [
     enCat: "Safety",
     esCat: "Seguridad",
     color: "#1a6b8a",
-    image: null,
+    image: "https://cdn.pixabay.com/photo/2017/01/29/21/54/hurricane-2019494_640.jpg",
   },
   {
     slug: "ev-charger-home-value",
@@ -49,7 +49,7 @@ const SIDEBAR_ARTICLES = [
     enCat: "Home Value",
     esCat: "Valor de Propiedad",
     color: "#27ae60",
-    image: null,
+    image: "https://cdn.pixabay.com/photo/2019/06/15/20/21/electric-car-4276419_640.jpg",
   },
 ];
 
@@ -66,26 +66,36 @@ function ArticleCard({ article, lang }) {
       onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 6px 20px rgba(0,0,0,.2)"; }}
       onMouseLeave={e => { e.currentTarget.style.transform = ""; e.currentTarget.style.boxShadow = ""; }}
       >
-        {/* Image / colored banner */}
-        <div style={{
-          height: 120,
-          background: `linear-gradient(135deg, ${article.color}dd, ${article.color}88)`,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          padding: "0 16px",
-          textAlign: "center",
-        }}>
-          <span style={{
-            fontSize: "0.8rem",
-            fontWeight: 700,
-            color: "#fff",
-            textTransform: "uppercase",
-            letterSpacing: "0.1em",
-            lineHeight: 1.3,
+        {/* Article image */}
+        <div style={{ height: 130, overflow: "hidden", position: "relative" }}>
+          {article.image
+            ? <img
+                src={article.image}
+                alt={lang === "es" ? article.esTitle : article.enTitle}
+                loading="lazy"
+                style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+              />
+            : <div style={{
+                height: "100%",
+                background: `linear-gradient(135deg, ${article.color}dd, ${article.color}88)`,
+                display: "flex", alignItems: "center", justifyContent: "center",
+              }}>
+                <span style={{ fontSize: "0.8rem", fontWeight: 700, color: "#fff",
+                  textTransform: "uppercase", letterSpacing: "0.1em" }}>
+                  {lang === "es" ? article.esCat : article.enCat}
+                </span>
+              </div>
+          }
+          <div style={{
+            position: "absolute", bottom: 0, left: 0, right: 0,
+            background: `linear-gradient(transparent, ${article.color}bb)`,
+            padding: "20px 12px 8px",
           }}>
-            {lang === "es" ? article.esCat : article.enCat}
-          </span>
+            <span style={{ fontSize: "0.72rem", fontWeight: 700, color: "#fff",
+              textTransform: "uppercase", letterSpacing: "0.1em" }}>
+              {lang === "es" ? article.esCat : article.enCat}
+            </span>
+          </div>
         </div>
         {/* Text */}
         <div style={{ padding: "14px 14px 12px", background: "var(--pps-surface)" }}>
