@@ -98,7 +98,7 @@ function Sidebar({ currentSlug, lang }) {
   return (
     <aside style={{ display: "flex", flexDirection: "column", gap: 20 }}>
       {/* Recent articles */}
-      <ElectricBorder color="#c8161d" speed={1.4} chaos={1.2} thickness={2.1} glow={1.15} spread={0.7} intensity={0.55} arcs={1.4} flicker={1} borderRadius={10}>
+      <ElectricBorder color="#c8161d">
       <div style={{
         background: "var(--pps-surface)",
         border: "1px solid var(--pps-border, rgba(0,0,0,.08))",

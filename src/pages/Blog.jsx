@@ -152,7 +152,7 @@ export default function Blog() {
             {ARTICLES.map((article) => (
               <li key={article.slug}>
                 <Link to={`/blog/${article.slug}`} style={{ textDecoration: "none", display: "block", height: "100%" }}>
-                  <ElectricBorder color="#c8161d" speed={1.4} chaos={1.2} thickness={2.1} glow={1.15} spread={0.7} intensity={0.55} arcs={1.4} flicker={1} borderRadius={10} style={{ height: "100%" }}>
+                  <ElectricBorder color="#c8161d" style={{ height: "100%" }}>
                   <div className="article-card">
                     {article.image && (
                       <div style={{ margin: "-22px -20px 16px", overflow: "hidden", borderRadius: "10px 10px 0 0" }}>

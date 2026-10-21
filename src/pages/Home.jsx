@@ -57,7 +57,7 @@ const SIDEBAR_ARTICLES = [
 function ArticleCard({ article, lang }) {
   return (
     <Link to={`/blog/${article.slug}`} style={{ textDecoration: "none", display: "block" }}>
-      <ElectricBorder color="#c8161d" speed={1.4} chaos={1.2} thickness={2.1} glow={1.15} spread={0.7} intensity={0.55} arcs={1.4} flicker={1} borderRadius={8}>
+      <ElectricBorder color="#c8161d">
       <div style={{
         borderRadius: 8,
         overflow: "hidden",
