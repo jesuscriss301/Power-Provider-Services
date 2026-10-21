@@ -1,26 +1,123 @@
 import { Helmet } from "react-helmet-async";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import { Link } from "react-router-dom";
+import Contact from "../components/Contact.jsx";
 
 const BASE = "https://www.powerproviderservices.com";
 
+const ARTICLES = [
+  {
+    slug: "florida-electrical-permit-laws",
+    enTitle: "Florida Electrical Permit Laws: What Every Homeowner Should Know",
+    esTitle: "Leyes de Permisos Eléctricos en Florida: Lo Que Todo Propietario Debe Saber",
+    enDesc: "When you need a permit, how to get one, and what happens if you skip it.",
+    esDesc: "Cuándo necesitas un permiso, cómo obtenerlo y qué pasa si lo omites.",
+    eyebrow: "Leyes / Laws",
+  },
+  {
+    slug: "fines-unpermitted-electrical-work",
+    enTitle: "Fines for Unpermitted Electrical Work in Florida",
+    esTitle: "Multas por Trabajo Eléctrico Sin Permiso en Florida",
+    enDesc: "Up to $250/day in fines, insurance denials, and forced teardowns.",
+    esDesc: "Hasta $250/día en multas, rechazo de seguros y demoliciones forzadas.",
+    eyebrow: "Leyes / Laws",
+  },
+  {
+    slug: "ev-charger-types-guide",
+    enTitle: "EV Charger Types: Level 1, Level 2 & DC Fast Charging Explained",
+    esTitle: "Tipos de Cargadores EV: Nivel 1, Nivel 2 y Carga Rápida DC",
+    enDesc: "Which charger is right for your home and vehicle in Orlando, FL.",
+    esDesc: "Qué cargador es el correcto para tu hogar y vehículo en Orlando.",
+    eyebrow: "Guía / Guide",
+  },
+  {
+    slug: "electrical-panel-types-guide",
+    enTitle: "Electrical Panel Types: Which Are Safe and Which Are Not",
+    esTitle: "Tipos de Paneles Eléctricos: Cuáles Son Seguros y Cuáles No",
+    enDesc: "Federal Pacific, Zinsco, Square D, Eaton — a plain-English comparison.",
+    esDesc: "Federal Pacific, Zinsco, Square D, Eaton — comparación en lenguaje simple.",
+    eyebrow: "Guía / Guide",
+  },
+  {
+    slug: "reduce-electric-bill-holidays",
+    enTitle: "How to Reduce Your Electric Bill During the Holidays in Florida",
+    esTitle: "Cómo Reducir tu Factura Eléctrica en las Fiestas en Florida",
+    enDesc: "LED lighting, smart plugs, TOU rates, and HVAC tips for the season.",
+    esDesc: "Iluminación LED, enchufes inteligentes, tarifas TOU y consejos de HVAC.",
+    eyebrow: "Ahorro / Savings",
+  },
+  {
+    slug: "hurricane-electrical-safety",
+    enTitle: "Hurricane Electrical Safety: Before, During & After the Storm",
+    esTitle: "Seguridad Eléctrica en Huracanes: Antes, Durante y Después",
+    enDesc: "Generator safety, backfeed dangers, and when to call an electrician after flooding.",
+    esDesc: "Seguridad del generador, peligros de retroalimentación y cuándo llamar al electricista.",
+    eyebrow: "Seguridad / Safety",
+  },
+  {
+    slug: "panel-upgrade-home-value",
+    enTitle: "How a Panel Upgrade Increases Your Home Value in Florida",
+    esTitle: "Cómo el Upgrade de Panel Aumenta el Valor de tu Propiedad en Florida",
+    enDesc: "4-point inspections, FHA/VA loans, and the ROI of upgrading to 200A.",
+    esDesc: "Inspecciones de 4 puntos, préstamos FHA/VA y el ROI de un upgrade a 200A.",
+    eyebrow: "Valor / Value",
+  },
+  {
+    slug: "ev-charger-home-value",
+    enTitle: "Does an EV Charger Increase Home Value?",
+    esTitle: "¿Un Cargador EV Aumenta el Valor de tu Propiedad?",
+    enDesc: "Zillow data, Duke Energy incentives, and what buyers in Orlando expect.",
+    esDesc: "Datos de Zillow, incentivos de Duke Energy y lo que esperan los compradores.",
+    eyebrow: "Valor / Value",
+  },
+  {
+    slug: "smart-home-property-value",
+    enTitle: "How Smart Home Upgrades Affect Property Value",
+    esTitle: "Cómo las Mejoras de Hogar Inteligente Afectan el Valor de la Propiedad",
+    enDesc: "NAR survey results, Lutron vs Leviton ROI, and which upgrades matter most.",
+    esDesc: "Resultados de encuestas NAR, ROI de Lutron vs Leviton y qué mejoras importan más.",
+    eyebrow: "Valor / Value",
+  },
+  {
+    slug: "outdoor-lighting-home-value",
+    enTitle: "Outdoor Lighting and Home Value: What Electricians Know",
+    esTitle: "Iluminación Exterior y Valor de Propiedad: Lo Que Saben los Electricistas",
+    enDesc: "CPTED principles, curb appeal, and the ROI of a professional lighting circuit.",
+    esDesc: "Principios CPTED, atractivo visual y el ROI de un circuito de iluminación profesional.",
+    eyebrow: "Valor / Value",
+  },
+];
+
 export default function Blog() {
   const { lang } = useLanguage();
+
   return (
     <main id="main">
       <Helmet>
-        <title>{lang === "es" ? "Recursos y Artículos — Power Provider Services" : "Electrical Resources & Articles — Power Provider Services"}</title>
-        <meta name="description" content={lang === "es" ? "Guías, leyes, consejos y datos sobre electricidad en Orlando y Florida — por Power Provider Services." : "Electrical guides, Florida laws, tips and data for Orlando homeowners — by Power Provider Services."} />
+        <title>
+          {lang === "es"
+            ? "Recursos y Artículos Eléctricos — Power Provider Services"
+            : "Electrical Resources & Articles — Power Provider Services"}
+        </title>
+        <meta
+          name="description"
+          content={
+            lang === "es"
+              ? "Guías, leyes, consejos y datos sobre electricidad en Orlando y Florida — por Power Provider Services."
+              : "Electrical guides, Florida laws, tips and data for Orlando homeowners — by Power Provider Services."
+          }
+        />
         <link rel="canonical" href={`${BASE}/blog`} />
       </Helmet>
 
+      {/* Hero */}
       <section className="section" style={{ paddingTop: 80, paddingBottom: 48, background: "var(--pps-surface)" }}>
-        <div className="container" style={{ maxWidth: 900 }}>
+        <div className="container" style={{ maxWidth: 1100 }}>
           <p className="eyebrow">{lang === "es" ? "Recursos" : "Resources"}</p>
-          <h1 style={{ fontSize: "clamp(2rem,4vw,3rem)" }}>
+          <h1 style={{ fontSize: "clamp(2rem,4vw,3rem)", marginBottom: "0.4em" }}>
             {lang === "es" ? "Artículos y Guías Eléctricas" : "Electrical Articles & Guides"}
           </h1>
-          <p style={{ fontSize: "1.1rem", color: "var(--pps-text-muted)", maxWidth: "60ch" }}>
+          <p style={{ fontSize: "1.1rem", color: "var(--pps-text-muted)", maxWidth: "60ch", margin: 0 }}>
             {lang === "es"
               ? "Información práctica sobre leyes eléctricas en Florida, tipos de equipos, seguridad y cómo los servicios eléctricos afectan el valor de tu propiedad."
               : "Practical information about Florida electrical laws, equipment types, safety, and how electrical work affects your property value."}
@@ -28,39 +125,42 @@ export default function Blog() {
         </div>
       </section>
 
+      {/* Article grid */}
       <section className="section">
-        <div className="container" style={{ maxWidth: 900 }}>
-          <ul style={{ listStyle: "none", padding: 0, display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(280px,1fr))", gap: 24 }}>
-            {lang === "es" ? (
-              <>
-          <li key="florida-electrical-permit-laws"><Link to="/blog/florida-electrical-permit-laws" style={{textDecoration:"none"}}><div className="article-card"><p className="eyebrow" style={{marginBottom:4}}>Recursos</p><h3 style={{fontSize:"1.1rem",marginBottom:8}}>Leyes de Permisos Eléctricos en Florida</h3><span style={{color:"var(--pps-red-text)",fontWeight:600}}>Leer más →</span></div></Link></li>
-          <li key="fines-unpermitted-electrical-work"><Link to="/blog/fines-unpermitted-electrical-work" style={{textDecoration:"none"}}><div className="article-card"><p className="eyebrow" style={{marginBottom:4}}>Recursos</p><h3 style={{fontSize:"1.1rem",marginBottom:8}}>Multas por Trabajo Eléctrico sin Permiso en Florida</h3><span style={{color:"var(--pps-red-text)",fontWeight:600}}>Leer más →</span></div></Link></li>
-          <li key="ev-charger-types-guide"><Link to="/blog/ev-charger-types-guide" style={{textDecoration:"none"}}><div className="article-card"><p className="eyebrow" style={{marginBottom:4}}>Recursos</p><h3 style={{fontSize:"1.1rem",marginBottom:8}}>Tipos de Cargadores EV: Guía Completa</h3><span style={{color:"var(--pps-red-text)",fontWeight:600}}>Leer más →</span></div></Link></li>
-          <li key="electrical-panel-types-guide"><Link to="/blog/electrical-panel-types-guide" style={{textDecoration:"none"}}><div className="article-card"><p className="eyebrow" style={{marginBottom:4}}>Recursos</p><h3 style={{fontSize:"1.1rem",marginBottom:8}}>Tipos de Paneles Eléctricos: Cuáles Son Seguros</h3><span style={{color:"var(--pps-red-text)",fontWeight:600}}>Leer más →</span></div></Link></li>
-          <li key="reduce-electric-bill-holidays"><Link to="/blog/reduce-electric-bill-holidays" style={{textDecoration:"none"}}><div className="article-card"><p className="eyebrow" style={{marginBottom:4}}>Recursos</p><h3 style={{fontSize:"1.1rem",marginBottom:8}}>Cómo Reducir tu Factura de Electricidad en las Fiestas</h3><span style={{color:"var(--pps-red-text)",fontWeight:600}}>Leer más →</span></div></Link></li>
-          <li key="hurricane-electrical-safety"><Link to="/blog/hurricane-electrical-safety" style={{textDecoration:"none"}}><div className="article-card"><p className="eyebrow" style={{marginBottom:4}}>Recursos</p><h3 style={{fontSize:"1.1rem",marginBottom:8}}>Seguridad Eléctrica en Huracanes: Antes, Durante y Después</h3><span style={{color:"var(--pps-red-text)",fontWeight:600}}>Leer más →</span></div></Link></li>
-          <li key="panel-upgrade-home-value"><Link to="/blog/panel-upgrade-home-value" style={{textDecoration:"none"}}><div className="article-card"><p className="eyebrow" style={{marginBottom:4}}>Recursos</p><h3 style={{fontSize:"1.1rem",marginBottom:8}}>¿Un Panel Upgrade Aumenta el Valor de tu Propiedad?</h3><span style={{color:"var(--pps-red-text)",fontWeight:600}}>Leer más →</span></div></Link></li>
-          <li key="ev-charger-home-value"><Link to="/blog/ev-charger-home-value" style={{textDecoration:"none"}}><div className="article-card"><p className="eyebrow" style={{marginBottom:4}}>Recursos</p><h3 style={{fontSize:"1.1rem",marginBottom:8}}>Cómo un Cargador EV Aumenta el Valor de tu Casa</h3><span style={{color:"var(--pps-red-text)",fontWeight:600}}>Leer más →</span></div></Link></li>
-          <li key="smart-home-property-value"><Link to="/blog/smart-home-property-value" style={{textDecoration:"none"}}><div className="article-card"><p className="eyebrow" style={{marginBottom:4}}>Recursos</p><h3 style={{fontSize:"1.1rem",marginBottom:8}}>Mejoras de Hogar Inteligente que Aumentan el Valor</h3><span style={{color:"var(--pps-red-text)",fontWeight:600}}>Leer más →</span></div></Link></li>
-          <li key="outdoor-lighting-home-value"><Link to="/blog/outdoor-lighting-home-value" style={{textDecoration:"none"}}><div className="article-card"><p className="eyebrow" style={{marginBottom:4}}>Recursos</p><h3 style={{fontSize:"1.1rem",marginBottom:8}}>Cómo la Iluminación Exterior Aumenta la Seguridad y el Valor</h3><span style={{color:"var(--pps-red-text)",fontWeight:600}}>Leer más →</span></div></Link></li>
-              </>
-            ) : (
-              <>
-          <li key="florida-electrical-permit-laws"><Link to="/blog/florida-electrical-permit-laws" style={{textDecoration:"none"}}><div className="article-card"><p className="eyebrow" style={{marginBottom:4}}>Resources</p><h3 style={{fontSize:"1.1rem",marginBottom:8}}>Florida Electrical Permit Laws Explained</h3><span style={{color:"var(--pps-red-text)",fontWeight:600}}>Read more →</span></div></Link></li>
-          <li key="fines-unpermitted-electrical-work"><Link to="/blog/fines-unpermitted-electrical-work" style={{textDecoration:"none"}}><div className="article-card"><p className="eyebrow" style={{marginBottom:4}}>Resources</p><h3 style={{fontSize:"1.1rem",marginBottom:8}}>Fines for Unpermitted Electrical Work in Florida</h3><span style={{color:"var(--pps-red-text)",fontWeight:600}}>Read more →</span></div></Link></li>
-          <li key="ev-charger-types-guide"><Link to="/blog/ev-charger-types-guide" style={{textDecoration:"none"}}><div className="article-card"><p className="eyebrow" style={{marginBottom:4}}>Resources</p><h3 style={{fontSize:"1.1rem",marginBottom:8}}>EV Charger Types: Level 1, Level 2 & DCFC Guide</h3><span style={{color:"var(--pps-red-text)",fontWeight:600}}>Read more →</span></div></Link></li>
-          <li key="electrical-panel-types-guide"><Link to="/blog/electrical-panel-types-guide" style={{textDecoration:"none"}}><div className="article-card"><p className="eyebrow" style={{marginBottom:4}}>Resources</p><h3 style={{fontSize:"1.1rem",marginBottom:8}}>Electrical Panel Types: Which Are Safe & Which to Replace</h3><span style={{color:"var(--pps-red-text)",fontWeight:600}}>Read more →</span></div></Link></li>
-          <li key="reduce-electric-bill-holidays"><Link to="/blog/reduce-electric-bill-holidays" style={{textDecoration:"none"}}><div className="article-card"><p className="eyebrow" style={{marginBottom:4}}>Resources</p><h3 style={{fontSize:"1.1rem",marginBottom:8}}>How to Reduce Your Electric Bill During the Holidays</h3><span style={{color:"var(--pps-red-text)",fontWeight:600}}>Read more →</span></div></Link></li>
-          <li key="hurricane-electrical-safety"><Link to="/blog/hurricane-electrical-safety" style={{textDecoration:"none"}}><div className="article-card"><p className="eyebrow" style={{marginBottom:4}}>Resources</p><h3 style={{fontSize:"1.1rem",marginBottom:8}}>Hurricane Electrical Safety: Before, During & After the Storm</h3><span style={{color:"var(--pps-red-text)",fontWeight:600}}>Read more →</span></div></Link></li>
-          <li key="panel-upgrade-home-value"><Link to="/blog/panel-upgrade-home-value" style={{textDecoration:"none"}}><div className="article-card"><p className="eyebrow" style={{marginBottom:4}}>Resources</p><h3 style={{fontSize:"1.1rem",marginBottom:8}}>Does a Panel Upgrade Increase Home Value?</h3><span style={{color:"var(--pps-red-text)",fontWeight:600}}>Read more →</span></div></Link></li>
-          <li key="ev-charger-home-value"><Link to="/blog/ev-charger-home-value" style={{textDecoration:"none"}}><div className="article-card"><p className="eyebrow" style={{marginBottom:4}}>Resources</p><h3 style={{fontSize:"1.1rem",marginBottom:8}}>How an EV Charger Increases Your Home Value</h3><span style={{color:"var(--pps-red-text)",fontWeight:600}}>Read more →</span></div></Link></li>
-          <li key="smart-home-property-value"><Link to="/blog/smart-home-property-value" style={{textDecoration:"none"}}><div className="article-card"><p className="eyebrow" style={{marginBottom:4}}>Resources</p><h3 style={{fontSize:"1.1rem",marginBottom:8}}>Smart Home Upgrades That Increase Property Value</h3><span style={{color:"var(--pps-red-text)",fontWeight:600}}>Read more →</span></div></Link></li>
-          <li key="outdoor-lighting-home-value"><Link to="/blog/outdoor-lighting-home-value" style={{textDecoration:"none"}}><div className="article-card"><p className="eyebrow" style={{marginBottom:4}}>Resources</p><h3 style={{fontSize:"1.1rem",marginBottom:8}}>How Outdoor Lighting Increases Home Security & Value</h3><span style={{color:"var(--pps-red-text)",fontWeight:600}}>Read more →</span></div></Link></li>
-              </>
-            )}
+        <div className="container" style={{ maxWidth: 1100 }}>
+          <ul
+            style={{
+              listStyle: "none",
+              padding: 0,
+              margin: 0,
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+              gap: 24,
+            }}
+          >
+            {ARTICLES.map((article) => (
+              <li key={article.slug}>
+                <Link to={`/blog/${article.slug}`} style={{ textDecoration: "none", display: "block", height: "100%" }}>
+                  <div className="article-card">
+                    <p className="eyebrow" style={{ marginBottom: 4, fontSize: "0.75rem" }}>
+                      {article.eyebrow}
+                    </p>
+                    <h3>{lang === "es" ? article.esTitle : article.enTitle}</h3>
+                    <p className="article-desc">
+                      {lang === "es" ? article.esDesc : article.enDesc}
+                    </p>
+                    <span className="read-more">
+                      {lang === "es" ? "Leer más →" : "Read more →"}
+                    </span>
+                  </div>
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </section>
+
+      <Contact />
     </main>
   );
 }
