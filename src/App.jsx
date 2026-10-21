@@ -21,6 +21,17 @@ import GeneratorHookup from "./pages/GeneratorHookup.jsx";
 import SmartHome from "./pages/SmartHome.jsx";
 import OutdoorLighting from "./pages/OutdoorLighting.jsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
+import Blog from "./pages/Blog.jsx";
+import FloridaPermitLaws from "./pages/blog/florida-electrical-permit-laws.jsx";
+import FinesUnpermitted from "./pages/blog/fines-unpermitted-electrical-work.jsx";
+import EVChargerTypes from "./pages/blog/ev-charger-types-guide.jsx";
+import PanelTypes from "./pages/blog/electrical-panel-types-guide.jsx";
+import ReduceBillHolidays from "./pages/blog/reduce-electric-bill-holidays.jsx";
+import HurricaneSafety from "./pages/blog/hurricane-electrical-safety.jsx";
+import PanelUpgradeValue from "./pages/blog/panel-upgrade-home-value.jsx";
+import EVChargerValue from "./pages/blog/ev-charger-home-value.jsx";
+import SmartHomeValue from "./pages/blog/smart-home-property-value.jsx";
+import OutdoorLightingValue from "./pages/blog/outdoor-lighting-home-value.jsx";
 
 function SkipLink() {
   const { t } = useLanguage();
@@ -52,6 +63,17 @@ function Layout() {
         <Route path="/generator-hookup" element={<GeneratorHookup />} />
         <Route path="/smart-home" element={<SmartHome />} />
         <Route path="/outdoor-lighting" element={<OutdoorLighting />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/florida-electrical-permit-laws" element={<FloridaPermitLaws />} />
+        <Route path="/blog/fines-unpermitted-electrical-work" element={<FinesUnpermitted />} />
+        <Route path="/blog/ev-charger-types-guide" element={<EVChargerTypes />} />
+        <Route path="/blog/electrical-panel-types-guide" element={<PanelTypes />} />
+        <Route path="/blog/reduce-electric-bill-holidays" element={<ReduceBillHolidays />} />
+        <Route path="/blog/hurricane-electrical-safety" element={<HurricaneSafety />} />
+        <Route path="/blog/panel-upgrade-home-value" element={<PanelUpgradeValue />} />
+        <Route path="/blog/ev-charger-home-value" element={<EVChargerValue />} />
+        <Route path="/blog/smart-home-property-value" element={<SmartHomeValue />} />
+        <Route path="/blog/outdoor-lighting-home-value" element={<OutdoorLightingValue />} />
       </Routes>
 
       <Footer />

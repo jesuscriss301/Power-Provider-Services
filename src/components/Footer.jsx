@@ -46,6 +46,17 @@ export default function Footer() {
         </div>
 
         <div>
+          <h3>{lang === "es" ? "Recursos" : "Resources"}</h3>
+          <ul>
+            <li><Link to="/blog">{lang === "es" ? "Blog Eléctrico" : "Electrical Blog"}</Link></li>
+            <li><Link to="/blog/florida-electrical-permit-laws">{lang === "es" ? "Permisos en Florida" : "Florida Permit Laws"}</Link></li>
+            <li><Link to="/blog/ev-charger-types-guide">{lang === "es" ? "Tipos de Cargadores EV" : "EV Charger Types"}</Link></li>
+            <li><Link to="/blog/hurricane-electrical-safety">{lang === "es" ? "Seguridad en Tormentas" : "Hurricane Safety"}</Link></li>
+            <li><Link to="/blog/panel-upgrade-home-value">{lang === "es" ? "Paneles y Valor de Propiedad" : "Panels & Home Value"}</Link></li>
+          </ul>
+        </div>
+
+        <div>
           <h3>{t("footer.verifyTitle")}</h3>
           <ul>
             <li>

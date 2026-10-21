@@ -60,4 +60,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <url><loc>https://www.powerproviderservices.com/blog</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.powerproviderservices.com/blog/florida-electrical-permit-laws</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.powerproviderservices.com/blog/fines-unpermitted-electrical-work</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.powerproviderservices.com/blog/ev-charger-types-guide</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.powerproviderservices.com/blog/electrical-panel-types-guide</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.powerproviderservices.com/blog/reduce-electric-bill-holidays</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.powerproviderservices.com/blog/hurricane-electrical-safety</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.powerproviderservices.com/blog/panel-upgrade-home-value</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.powerproviderservices.com/blog/ev-charger-home-value</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.powerproviderservices.com/blog/smart-home-property-value</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.powerproviderservices.com/blog/outdoor-lighting-home-value</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
