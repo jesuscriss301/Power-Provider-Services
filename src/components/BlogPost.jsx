@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import { Link } from "react-router-dom";
 import Contact from "./Contact.jsx";
+import ElectricBorder from "./ElectricBorder.jsx";
 import LocationMap from "./LocationMap.jsx";
 
 const BASE = "https://www.powerproviderservices.com";
@@ -97,6 +98,7 @@ function Sidebar({ currentSlug, lang }) {
   return (
     <aside style={{ display: "flex", flexDirection: "column", gap: 20 }}>
       {/* Recent articles */}
+      <ElectricBorder color="#c8161d" speed={1.4} chaos={1.2} thickness={2.1} glow={1.15} spread={0.7} intensity={0.55} arcs={1.4} flicker={1} borderRadius={10}>
       <div style={{
         background: "var(--pps-surface)",
         border: "1px solid var(--pps-border, rgba(0,0,0,.08))",
@@ -156,6 +158,7 @@ function Sidebar({ currentSlug, lang }) {
           </div>
         </div>
       </div>
+      </ElectricBorder>
 
       {/* CTA box */}
       <div style={{
